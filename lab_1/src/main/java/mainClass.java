@@ -1,4 +1,4 @@
-
+import java.net.URL;
 
 public class mainClass {
     public static void main(String[] args) throws Exception{
@@ -15,5 +15,5 @@ public class mainClass {
         //System.out.println(new SimpleDateFormat("yyyy-MM-dd").format(new Date()));
 
     }
-    Collection
+
 }

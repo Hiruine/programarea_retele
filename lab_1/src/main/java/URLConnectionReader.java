@@ -1,4 +1,4 @@
-import org.apache.http.client.utils.URIBuilder;
+
 
 import javax.net.ssl.HttpsURLConnection;
 import java.io.BufferedReader;
@@ -33,12 +33,9 @@ public class URLConnectionReader {
     }
 
     public void processInputURL() throws Exception {
-         URI temp = new URIBuilder(url.toURI()).addParameter("start", dateSince)
-                 .addParameter("end", dateTill).build();
-         url = temp.toURL();
-        System.out.println(url.toString());
+        URL url = new URL("https://evil-legacy-service.herokuapp.com/api/v101/orders/?start=2017-09-01&end=2017-10-03");
 
-        URLConnection yc = url.openConnection();
+//        URLConnection yc = url.openConnection();
 
         HttpsURLConnection conn = (HttpsURLConnection) url.openConnection();
         conn.setRequestMethod("GET");

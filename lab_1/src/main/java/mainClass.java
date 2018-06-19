@@ -1,8 +1,11 @@
 import java.net.URL;
+<<<<<<< HEAD
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.LinkedList;
 import java.util.List;
+=======
+>>>>>>> dc7e28d9418e56e72b5ad5424f328fd05cca9e1d
 
 public class mainClass {
     public static void main(String[] args) throws Exception{
@@ -20,4 +23,5 @@ public class mainClass {
         //System.out.println(new SimpleDateFormat("yyyy-MM-dd").format(new Date()));
 
     }
+
 }

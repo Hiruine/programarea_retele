@@ -1,6 +1,8 @@
 import java.net.URL;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.LinkedList;
+import java.util.List;
 
 public class mainClass {
     public static void main(String[] args) throws Exception{
@@ -10,6 +12,7 @@ public class mainClass {
 
         URL url = new URL("https://evil-legacy-service.herokuapp.com/" +
                 "api/v101/orders/");
+
 
         URLConnectionReader link = new URLConnectionReader(url, "2003-05-11");
         link.processInputURL();
